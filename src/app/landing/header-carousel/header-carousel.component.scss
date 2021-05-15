@@ -50,6 +50,10 @@ h1 {
   h1 {
     font-size: 40px;
   }
+  .carousel-item,
+  .overlay {
+    height: 80vh;
+  }
 }
 @media (max-width: 425px) {
 
@@ -59,6 +63,11 @@ h1 {
 
   .carousel-caption.d-sm-block.text-center {
     top: 30%;
+  }
+
+  .carousel-item,
+  .overlay {
+    height: 60vh;
   }
 
 }

@@ -17,12 +17,24 @@
       <div class="collpase navbar-collapse justify-content-end" id="navbarCollapse">
           <ul class="navbar-nav ">
               <li class="nav-itm " *ngFor="let navItem of navbarData.navItem" >
-                <a [href]="navItem.href"  class="nav-link"
-                    (click)="selectedNavItem = navItem.title"
-                    [ngClass]="{active: navItem.title === selectedNavItem}">{{navItem.title}}</a>
+                <a class="nav-link"
+                    (click)="navbarItemClicked(navItem.title,navItem.href)"
+                    [ngClass]="{active: navItem.title === selectedNavItem}">{{navItem.title}}
+                </a>
               </li>
           </ul>
       </div>
+
+      <!-- <div class="collpase navbar-collapse justify-content-end" id="navbarCollapse">
+        <ul class="navbar-nav ">
+            <li class="nav-itm " *ngFor="let navItem of navbarData.navItem" >
+              <a [href]="navItem.href"  class="nav-link"
+                  (click)="navbarItemClicked(navItem.title,navItem.href)"
+                  [ngClass]="{active: navItem.title === selectedNavItem}">{{navItem.title}}
+              </a>
+            </li>
+        </ul>
+    </div> -->
 
       <!-- right navbar -->
       <div class="collpase navbar-collapse justify-content-end" id="navbarCollapse">

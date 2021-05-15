@@ -16,7 +16,7 @@ export class DataService {
       },
 
       navItem : [
-        { href: '#', title: 'Home'},
+        { href: '#showcase', title: 'Home'},
         { href: '#about', title: 'About Us' },
         { href: '#contact', title: 'Contact Us' }
       ],
