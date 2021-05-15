@@ -1,0 +1,25 @@
+$mainBgColor: black;
+$mainColor: #FEC400;
+$togglerIconColor: white;
+
+.scrolledAddedClass {
+    background-color: $mainBgColor;
+}
+
+.navbar{
+
+    a{
+        color: white;
+        opacity: 1 !important;
+    }
+
+    a:hover,
+    a.active {
+        color: $mainColor;
+        font-weight: bold;
+    }
+}
+
+.navbar-toggler-icon {
+  color: $togglerIconColor
+}

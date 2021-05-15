@@ -1,0 +1,21 @@
+$mp: ".my-pragraph";
+
+#{$mp} {
+    border: none;
+	margin: 20px;
+	cursor: pointer;
+	background-color: cadetblue ;
+	
+	#{$mp}__subp{
+		background-color: brown !important;
+		font-weight: 900;
+
+		&--center {
+			text-align: center;
+		}
+	}
+	
+	
+
+}
+

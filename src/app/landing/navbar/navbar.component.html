@@ -1,0 +1,41 @@
+<!-- navbar -->
+<div id="myNavbar" class="container">
+  <nav class="navbar navbar-expand-sm py-2 fixed-top" [ngClass]="{ scrolledAddedClass: scrolled }">
+
+      <!-- left navbar -->
+      <a class="navbar-brand" [href]="navbarData.leftNav.href">
+        <img class="img-fluid logo_img" width="100px" [src]="navbarData.leftNav.logoImg" [alt]="navbarData.leftNav.altImg">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <i class="fas fa-bars"></i>
+        </span>
+      </button>
+
+      <!-- navbar items-->
+      <div class="collpase navbar-collapse justify-content-end" id="navbarCollapse">
+          <ul class="navbar-nav ">
+              <li class="nav-itm " *ngFor="let navItem of navbarData.navItem" >
+                <a [href]="navItem.href"  class="nav-link"
+                    (click)="selectedNavItem = navItem.title"
+                    [ngClass]="{active: navItem.title === selectedNavItem}">{{navItem.title}}</a>
+              </li>
+          </ul>
+      </div>
+
+      <!-- right navbar -->
+      <div class="collpase navbar-collapse justify-content-end" id="navbarCollapse">
+          <ul class="navbar-nav ">
+              <li class="nav-itm" *ngFor="let rightNav of navbarData.rightNav">
+                  <a [href]="rightNav.href" class="nav-link">
+                    <img [src]="rightNav.logoImg" width="140px" alt="rightNav.altImg">
+                  </a>
+              </li>
+          </ul>
+      </div>
+
+
+  </nav>
+
+ </div>

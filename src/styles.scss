@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+html {
+  scroll-behavior: smooth;
+}
+
+$main-color: black;
+$accent-color: #FEC400;
+
+::-webkit-scrollbar {
+  width  : 10px;
+  opacity: 0;
+}
+::-webkit-scrollbar:hover {
+  opacity: 1 !important;
+}
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+::-webkit-scrollbar-thumb {
+  background      : $main-color !important;
+  // border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: $accent-color !important;
+}

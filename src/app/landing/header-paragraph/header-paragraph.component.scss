@@ -1,0 +1,32 @@
+
+
+.paragraph-right-positioned {
+  margin-left: auto;
+  text-align: right;
+}
+
+.paragraph-left-positioned {
+  margin-right: auto;
+  text-align: left;
+}
+
+.paragraph-center-positioned {
+  margin: auto;
+  text-align: center;
+}
+
+
+
+@media (max-width: 768px) {
+  h2{
+    font-size: 40px;
+  }
+
+}
+@media (max-width: 425px) {
+
+  h2 {
+    font-size: 20px;
+  }
+
+}

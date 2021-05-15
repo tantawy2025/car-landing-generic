@@ -1,0 +1,44 @@
+<!--
+  to make text direction ltr or rtl or centered for <h2></h2> or <p></p> then must appply the following
+  p-left-positioned
+  {
+    margin-right: auto
+    text-align: left
+  }
+
+  p-right-positioned {
+    margin-left: auto
+    text-align: right
+  }
+
+  p-center-positioned {
+    margin: auto
+    text-align: center
+  }
+
+-->
+
+<!-- NO External CSS Styles use inline styles
+    if you want to use inline styles  -->
+
+<!-- <div class="container">
+    <div class=" py-5 text-{{headerPosition}}">
+      <h2 class="text-{{headerPosition}}">{{ headerText }}</h2>
+      <p class="text-{{paragraphPosition}}"
+          style="width: 70%;
+                  margin{{ paragraphPosition=='center' ? '' :  paragraphPosition=='left'?'-right':'-left' }}: auto; ">
+        {{ paragraphText }}
+      </p>
+    </div>
+</div> -->
+
+<!-- if you want to use external styles -->
+<div class="container">
+  <div class="text-{{headerPosition}}">
+    <h2 class="text-{{headerPosition}}" style="color: {{headerColor}};">{{ headerText }}</h2>
+    <p class="paragraph-{{paragraphPosition}}-positioned" style="width: {{paragraphWidth}}%; color: {{paragraphColor}};">
+      {{ paragraphText }}
+    </p>
+  </div>
+</div>
+
